@@ -269,4 +269,37 @@
         // Preloader
 		$('.preloader').fadeOut(500);
     });
+
+
+
+$('.main-menu ul li a').on( 'click', function(){
+    var el = $(this);
+    var dest = el.attr('href'); // получаем направление
+    if(dest !== undefined && dest !== '') { // проверяем существование
+        $('html').animate({
+            scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
+        }, 500 // скорость прокрутки
+        );
+    }
+    return false;
+});
+
+var wrap = $(".header-area");
+$(window).scroll(function(e) {
+  // console.log(.scrollTop);
+  if ($(this).scrollTop() > 250) {
+    wrap.addClass("fix-search");
+    // wrap.css({"transition": "all 0.7s ease", "position": "fixed" });
+  } else {
+    if($(this).scrollTop() > 10){
+      wrap.addClass("fix-search-top");
+    }else{
+      wrap.removeClass("fix-search-top");
+    }
+    wrap.removeClass("fix-search");
+    // wrap.css({"transition": "all 0.7s ease", "position": "absolute", "top" : "0px" });
+  }
+
+});
+
 })(jQuery);
