@@ -6,7 +6,7 @@
 }
 
 .centerMyBtn{
-	margin-top: 10px; 
+	margin-top: 10px;
 }
 
 .single-food{
@@ -61,5 +61,12 @@
   position: fixed;
   top: 0px;
   width: 100%;
+	z-index: 100;
   border-bottom: 1px solid rgba(0,0,0,.1);
 }
+
+.my_padding30px_top_botton{
+	padding: 30px 0px;
+}
+
+.my-text-center{text-align: center;}

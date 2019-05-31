@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body id="hone">
     <!-- Preloader Starts -->
     <div class="preloader">
         <div class="spinner"></div>
@@ -32,8 +32,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
-                    <div class="logo-area">
-                        <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+                    <div id="header-logo" class="logo-area">
+                        <a href="#hone"><img src="assets/images/logo/logo.png" alt="logo"></a>
 
                     </div>
                 </div>
@@ -348,7 +348,7 @@
     <!-- Testimonial Area End -->
 
     <!-- Update Area Starts -->
-    <section class="update-area section-padding">
+    <!-- <section class="update-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -409,8 +409,69 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Update Area End -->
+
+    <!-- contacts -->
+    <section class="contact-form section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-5 mb-lg-0">
+                    <!-- <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="info-text">
+                            <h5>California, United States</h5>
+                            <p>Santa monica bullevard</p>
+                        </div>
+                    </div> -->
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h5>+375 (44) 713 25 10</h5>
+                            <p>Белоруский номер телефона</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h5>00 (440) 9865 562</h5>
+                            <p>Казахстанский номер телефона</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="info-text">
+                            <h5>info@frutov.by</h5>
+                            <p>По всем вопросам сюда</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <form action="#">
+                        <div class="left">
+                            <input type="text" placeholder="Имя" >
+                            <input type="text" placeholder="Выбрать" >
+                            <input type="email" placeholder="E-mail">
+                            <input type="phone" placeholder="Телефон" >
+                        </div>
+                        <div class="right">
+                            <textarea name="message" cols="20" rows="11" placeholder="Сообщение" ></textarea>
+                        </div>
+                        <button type="submit" class="template-btn">Заказать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end contacts -->
 
     <!-- Table Area Starts -->
 <!--     <section class="table-area section-padding">
@@ -457,7 +518,7 @@
 
     <!-- Footer Area Starts -->
     <footer class="footer-area">
-        <div class="footer-widget section-padding">
+        <div class="footer-widget my_padding30px_top_botton">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -510,12 +571,12 @@
         <div class="footer-copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7 col-md-6">
-                        <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="my-text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> | сайт разработан студией <a href="https://webidea.by">webidea</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
                     </div>
-                    <div class="col-lg-5 col-md-6">
+                    <!-- <div class="col-lg-5 col-md-6">
                         <div class="social-icons">
                             <ul>
                                 <li class="no-margin">Follow Us</li>
@@ -526,13 +587,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </footer>
     <!-- Footer Area End -->
-
 
     <!-- Javascript -->
     <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
