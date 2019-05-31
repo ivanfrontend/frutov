@@ -272,9 +272,10 @@
 
 
 
-$('.main-menu ul li a').on( 'click', function(){
-    var el = $(this);
-    var dest = el.attr('href'); // получаем направление
+// Функция плавное скрола меню
+var mSkroll = (item) => {
+  $(item).on('click', function() {
+    var dest = $(this).attr('href'); // получаем направление
     if(dest !== undefined && dest !== '') { // проверяем существование
         $('html').animate({
             scrollTop: $(dest).offset().top // прокручиваем страницу к требуемому элементу
@@ -282,46 +283,36 @@ $('.main-menu ul li a').on( 'click', function(){
         );
     }
     return false;
-});
+  })
+};
+// Вызов функции плавное скрола меню
+mSkroll('.main-menu ul li a');
+mSkroll('#header-logo a');
 
-var wrap = $(".header-area");
-$(window).scroll(function(e) {
-  // console.log(.scrollTop);
-  if ($(this).scrollTop() > 250) {
-    wrap.addClass("fix-search");
-    // wrap.css({"transition": "all 0.7s ease", "position": "fixed" });
-  } else {
-    if($(this).scrollTop() > 10){
-      wrap.addClass("fix-search-top");
-    }else{
-      wrap.removeClass("fix-search-top");
+// /Функция плавное скрола меню
+
+
+
+// Липкое меню
+var lMenu = () => {
+  var wrap = $(".header-area");
+  $(window).scroll(function(e) {
+    if ($(this).scrollTop() > 250) {
+      wrap.addClass("fix-search");
+    } else {
+      if($(this).scrollTop() > 10){
+        wrap.addClass("fix-search-top");
+      }else{
+        wrap.removeClass("fix-search-top");
+      }
+      wrap.removeClass("fix-search");
     }
-    wrap.removeClass("fix-search");
-    // wrap.css({"transition": "all 0.7s ease", "position": "absolute", "top" : "0px" });
-  }
 
-});
+  });
+};
+// Вызов функции
+lMenu();
+
+// /Липкое меню
 
 })(jQuery);
-
-
-
-$(document).ready(function() {
-    $('.popup-with-form').magnificPopup({
-        type: 'inline',
-        preloader: false,
-        focus: '#name',
-
-        // When elemened is focused, some mobile browsers in some cases zoom in
-        // It looks not nice, so we disable it:
-        callbacks: {
-            beforeOpen: function() {
-                if($(window).width() < 700) {
-                    this.st.focus = false;
-                } else {
-                    this.st.focus = '#name';
-                }
-            }
-        }
-    });
-});

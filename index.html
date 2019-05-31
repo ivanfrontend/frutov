@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/dist/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body id="hone">
     <!-- Preloader Starts -->
     <div class="preloader">
         <div class="spinner"></div>
@@ -33,8 +33,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
-                    <div class="logo-area">
-                        <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+                    <div id="header-logo" class="logo-area">
+                        <a href="#hone"><img src="assets/images/logo/logo.png" alt="logo"></a>
 
                     </div>
                 </div>
@@ -270,7 +270,7 @@
                     <div class="deshes-text">
                         <h3><span>EKONOMIK </span><br> SISTEM LTD</h3>
                         <p class="pt-3">Компанию «EKONOMİK SİSTEM LTD.ŞTİ» связывают длительные и прочные деловые связи с компанией «Frutov», которая является лидером на фруктово-овощном рынке Беларуси. В ближайшие годы мы ожидаем продолжение нашего плодотворного сотрудничества.</p>
-                       <diV class="div_btn_info"><a href="#" class="template-btn3 mt-2">Подробнее <span><i class="fa fa-long-arrow-right"></i></span></a></diV>
+                        <diV class="div_btn_info"><a href="#" class="template-btn3 mt-2">Подробнее <span><i class="fa fa-long-arrow-right"></i></span></a></diV>
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
@@ -286,7 +286,7 @@
                     <div class="deshes-text">
                         <h3><span>ООО «УСПЕХ»</span><br>РОССИЯ</h3>
                         <p class="pt-3">От всей души хотим выразить глубокую благодарность и признательность за Ваш эффективный ежедневный труд, добросовестность, оперативное решение возникающих вопросов, лояльное отношение.</p>
-                         <diV class="div_btn_info"><a href="#" class="template-btn3 mt-2">Подробнее <span><i class="fa fa-long-arrow-right"></i></span></a></diV>
+                        <diV class="div_btn_info"><a href="#" class="template-btn3 mt-2">Подробнее <span><i class="fa fa-long-arrow-right"></i></span></a></diV>
                     </div>
                 </div>
             </div>
@@ -349,7 +349,7 @@
     <!-- Testimonial Area End -->
 
     <!-- Update Area Starts -->
-  <!--   <section class="update-area section-padding">
+    <!-- <section class="update-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -413,18 +413,27 @@
     </section> -->
     <!-- Update Area End -->
 
-    <!-- Contact Form Starts -->
-    <section class="contact-form section-padding3">
+    <!-- contacts -->
+    <section class="contact-form section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 mb-5 mb-lg-0">
-                    <div class="d-flex">
+                    <!-- <div class="d-flex">
                         <div class="into-icon">
                             <i class="fa fa-home"></i>
                         </div>
                         <div class="info-text">
                             <h5>California, United States</h5>
                             <p>Santa monica bullevard</p>
+                        </div>
+                    </div> -->
+                    <div class="d-flex">
+                        <div class="into-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h5>+375 (44) 713 25 10</h5>
+                            <p>Белоруский номер телефона</p>
                         </div>
                     </div>
                     <div class="d-flex">
@@ -433,7 +442,7 @@
                         </div>
                         <div class="info-text">
                             <h5>00 (440) 9865 562</h5>
-                            <p>Mon to Fri 9am to 6 pm</p>
+                            <p>Казахстанский номер телефона</p>
                         </div>
                     </div>
                     <div class="d-flex">
@@ -441,28 +450,29 @@
                             <i class="fa fa-envelope-o"></i>
                         </div>
                         <div class="info-text">
-                            <h5>support@colorlib.com</h5>
-                            <p>Send us your query anytime!</p>
+                            <h5>info@frutov.by</h5>
+                            <p>По всем вопросам сюда</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-9">
                     <form action="#">
                         <div class="left">
-                            <input type="text" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" required>
-                            <input type="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" required>
-                            <input type="text" placeholder="Enter subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" required>
+                            <input type="text" placeholder="Имя" >
+                            <input type="text" placeholder="Выбрать" >
+                            <input type="email" placeholder="E-mail">
+                            <input type="phone" placeholder="Телефон" >
                         </div>
                         <div class="right">
-                            <textarea name="message" cols="20" rows="7"  placeholder="Enter Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" required></textarea>
+                            <textarea name="message" cols="20" rows="11" placeholder="Сообщение" ></textarea>
                         </div>
-                        <button type="submit" class="template-btn">subscribe now</button>
+                        <button type="submit" class="template-btn">Заказать</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Contact Form End -->
+    <!-- end contacts -->
 
     <!-- Table Area Starts -->
 <!--     <section class="table-area section-padding">
@@ -506,68 +516,15 @@
     </section> -->
     <!-- Table Area End -->
 
-
-    <!-- Footer Area Starts -->
-    <footer class="footer-area">
-       <!--  <div class="footer-widget section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="single-widget single-widget1">
-                            <a href="index.html"><img src="assets/images/logo/logo2.png" alt=""></a>
-                            <p class="mt-3">Which morning fourth great won't is to fly bearing man. Called unto shall seed, deep, herb set seed land divide after over first creeping. First creature set upon stars deep male gathered said she'd an image spirit our</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-widget single-widget2 my-5 my-md-0">
-                            <h5 class="mb-4">contact us</h5>
-                            <div class="d-flex">
-                                <div class="into-icon">
-                                    <i class="fa fa-map-marker"></i>
-                                </div>
-                                <div class="info-text">
-                                    <p>1234 Some St San Francisco, CA 94102, US 1.800.123.4567 </p>
-                                </div>
-                            </div>
-                            <div class="d-flex">
-                                <div class="into-icon">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <div class="info-text">
-                                    <p>(123) 456 78 90</p>
-                                </div>
-                            </div>
-                            <div class="d-flex">
-                                <div class="into-icon">
-                                    <i class="fa fa-envelope-o"></i>
-                                </div>
-                                <div class="info-text">
-                                    <p>support@axiomthemes.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-widget single-widget3">
-                            <h5 class="mb-4">opening hours</h5>
-                            <p>Monday ...................... Closed</p>
-                            <p>Tue-Fri .............. 10 am - 12 pm</p>
-                            <p>Sat-Sun ............... 8 am - 11 pm</p>
-                            <p>Holidays ............. 10 am - 12 pm</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <div class="footer-copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7 col-md-6">
-                        <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Все права защищены. Сайт разработан студией | WEBIDEA</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="my-text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Сайт разработан студией |<a href="https://webidea.by"> WEBIDEA</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
                     </div>
-                    <div class="col-lg-5 col-md-6">
+                    <!-- <div class="col-lg-5 col-md-6">
                         <div class="social-icons">
                             <ul>
                                 <li class="no-margin">Follow Us</li>
@@ -578,12 +535,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Вс�
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </footer>
-
     <!-- Footer Area End -->
 
     <!-- Javascript -->
