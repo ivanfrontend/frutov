@@ -336,9 +336,11 @@ var callPopup = (selecter) => {
   });
 };
 // вызов функции
-callPopup('.centerMyBtn');
-callPopup('.coll_info');
-callPopup('.coll_product');
+callPopup('.centerMyBtn'); // сотрудничество
+callPopup('.coll_info'); // Подробнее
+callPopup('.coll_product'); // Подробнее -> заказать товар
+callPopup('.coll_product_to'); // заказать товар
+callPopup('.all_coll_phone'); // все телефоны
 
 // /функция для всплывающего окна
 
@@ -362,7 +364,6 @@ var objectProduct = () => {
       'description': description,
       'season': season,
     }
-    // console.log(creactObject.img);
     $('#coll_info').find('.wrap_img_product').find('img').attr({'src': creactObject.img});
     $('#coll_info').find('.wrap_text_product').find('.name_product').text(creactObject.title);
     $('#coll_info').find('.wrap_disc_product').find('.desc_product').text(creactObject.description);
@@ -376,6 +377,14 @@ var objectProduct = () => {
 }
 objectProduct();
 // /функция для создания объекта продукта
+
+// получение название товара при нажатии на кнопку заказать
+$('.coll_product_to').on('click', function() {
+  var text = $(this).parent('.div_btn_info').parent('.wrap_btn_info').siblings('.wrap_this_name').find('.this_name').text();
+  console.log(text);
+  $('#coll_product_to').find('.wrap_form_coll_product').find('.input_product').val(text);
+})
+// /получение название товара при нажатии на кнопку заказать
 
 // Выбор в контактах
 $('.select_text').on('click', function() {
