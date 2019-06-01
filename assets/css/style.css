@@ -222,23 +222,21 @@ h1 span{
 
 	.deshes-text h3{
 		display: inline-block;
-    	vertical-align: middle;	
+    	vertical-align: middle;
 	}
 
 	.deshes-text img{
 		width: 15%;
 		margin-left: 15px;
-	
+
 	}
-
-
-
-
 /*стили для блока партнеров*/
 
 	.customer-img{
 		margin: 0 auto;
-	} 
+	}
 
 /*стили для блока партнеров*/
-
+.btn_reviews{cursor: pointer;}
+.wrap_reviews{overflow: hidden;height: 125px;transition: all 0.7s ease;}
+.wrap_reviews.open_wrap_reviews{height: 250px;transition: all 0.7s ease;}

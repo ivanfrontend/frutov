@@ -399,6 +399,13 @@ $('.select_text').on('click', function() {
 });
 // /Выбор в контактах
 
+// Открытие отзывов
+
+$('.btn_reviews').on('click', function() {
+  $(this).parent('.div_btn_info').siblings('.wrap_reviews').toggleClass('open_wrap_reviews');
+});
+// /Открытие отзывов
+
 
 // if($('.mfp-content').find('.white-popup-block').attr('id') == 'coll_info' ){
 //   $(this).addClass('coll_info_mfp-content');
