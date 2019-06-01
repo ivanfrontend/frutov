@@ -66,5 +66,28 @@
 		top: 0px;
 	}
 
-
+	.wrap_btn_info .div_btn_info{
+		width: 50% !important;
+	}
 }
+
+@media (min-width: 450px) and (max-width: 770px){
+	h1{
+		font-size: 25px;
+	}
+
+<<<<<<< HEAD
+}
+=======
+	.deshes-area h1:after{
+		display: none;
+	}
+}
+
+
+@media (max-width: 1100px){
+	.wrap_btn_info .div_btn_info{
+		width: 80%;
+	}
+}
+>>>>>>> dcced9a3aef9fecbe4181a3dae75ae6cbdf3c74a
