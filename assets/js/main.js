@@ -13,9 +13,9 @@
 
         // Employee Slider
         $('.testimonial-slider').owlCarousel({
-            loop: true,
+            loop: false,
             margin: 30,
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout: 2000,
             autoplayHoverPause: true,
             nav: false,
@@ -341,6 +341,7 @@ callPopup('.coll_info'); // Подробнее
 callPopup('.coll_product'); // Подробнее -> заказать товар
 callPopup('.coll_product_to'); // заказать товар
 callPopup('.all_coll_phone'); // все телефоны
+callPopup('.block_provider'); // сотрудничество
 
 // /функция для всплывающего окна
 
