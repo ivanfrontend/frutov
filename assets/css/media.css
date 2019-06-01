@@ -1,3 +1,29 @@
+@media (max-width: 990px){
+  #coll_info .wrap_info_product{
+		display: block;
+		width: 100%;
+	}
+	#coll_info .wrap_info_product .wrap_img_product{
+		text-align: center;
+		width: 200px;
+		margin: 0 auto;
+	}
+	#coll_info .wrap_info_product .wrap_text_product{
+		width: 60%;
+		margin: 0 auto;
+	}
+}
+
+
+@media (max-width: 550px){
+	#coll_info .wrap_info_product .wrap_text_product{
+		width: 100%;
+	}
+	#coll_info .wrap_info_product .wrap_text_product div{
+		margin-bottom: 5px;
+	}
+}
+
 @media (max-width: 330px){
 	h1{
 		font-size: 23px;
@@ -8,7 +34,7 @@
 	#video-bg{
 		height: 100vh;
 		background-image: url(../images/bgMobile.jpg);
-		background-size: cover; 
+		background-size: cover;
 	}
 
 	video{
@@ -30,6 +56,10 @@
 
 	.white-popup-block{
 		width: 90% !important;
+	}
+
+	#coll_info{
+		width: 100% !important;
 	}
 
 	.header-area{
