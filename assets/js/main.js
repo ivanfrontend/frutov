@@ -315,26 +315,92 @@ lMenu();
 
 // /Липкое меню
 
-})(jQuery);
+// функция для всплывающего окна
+var callPopup = (selecter) => {
+  $(selecter).magnificPopup({
+      type: 'inline',
+      preloader: false,
+      focus: '#name',
 
+      // When elemened is focused, some mobile browsers in some cases zoom in
+      // It looks not nice, so we disable it:
+      callbacks: {
+          beforeOpen: function() {
+              if($(window).width() < 700) {
+                  this.st.focus = false;
+              } else {
+                  this.st.focus = '#name';
+              }
+          }
+      }
+  });
+};
+// вызов функции
+callPopup('.centerMyBtn'); // сотрудничество
+callPopup('.coll_info'); // Подробнее
+callPopup('.coll_product'); // Подробнее -> заказать товар
+callPopup('.coll_product_to'); // заказать товар
+callPopup('.all_coll_phone'); // все телефоны
 
+// /функция для всплывающего окна
 
-$(document).ready(function() {
-    $('.centerMyBtn').magnificPopup({
-        type: 'inline',
-        preloader: false,
-        focus: '#name',
+// функция для создания объекта продукта
+var objectProduct = () => {
+  var creactObject = {};
+  $('.coll_info').on('click', function() {
+    // Получаем родителей
+    var parent = $(this).parent('.div_btn_info').parent('.wrap_btn_info');
+    var parentInfo = parent.find('.wrap_block_visibility_hedden');
+    // получаем текст
+    var img = parent.parent('.food-content').siblings('.food-img').find('.img_product').data('img');
+    var title = parent.siblings('.wrap_this_name').find('.this_name').text();
+    var country = parentInfo.find('.wrap_country_this_desc').text();
+    var description = parentInfo.find('.wrap_this_desc').text();
+    var season = parentInfo.find('.wrap_this_age').text();
+    creactObject = creactObject = {
+      'img': img,
+      'title': title,
+      'country': country,
+      'description': description,
+      'season': season,
+    }
+    $('#coll_info').find('.wrap_img_product').find('img').attr({'src': creactObject.img});
+    $('#coll_info').find('.wrap_text_product').find('.name_product').text(creactObject.title);
+    $('#coll_info').find('.wrap_disc_product').find('.desc_product').text(creactObject.description);
+    $('#coll_info').find('.wrap_country_product').find('.country_product').text(creactObject.country);
+    $('#coll_info').find('.wrap_age_product').find('.desc_age_product').text(creactObject.season);
+  });
+  $('.coll_product').on('click', function() {
+    $('#coll_product').find('.wrap_form_coll_product').find('.input_product').val(creactObject.title);
+  })
 
-        // When elemened is focused, some mobile browsers in some cases zoom in
-        // It looks not nice, so we disable it:
-        callbacks: {
-            beforeOpen: function() {
-                if($(window).width() < 700) {
-                    this.st.focus = false;
-                } else {
-                    this.st.focus = '#name';
-                }
-            }
-        }
-    });
+}
+objectProduct();
+// /функция для создания объекта продукта
+
+// получение название товара при нажатии на кнопку заказать
+$('.coll_product_to').on('click', function() {
+  var text = $(this).parent('.div_btn_info').parent('.wrap_btn_info').siblings('.wrap_this_name').find('.this_name').text();
+  console.log(text);
+  $('#coll_product_to').find('.wrap_form_coll_product').find('.input_product').val(text);
+})
+// /получение название товара при нажатии на кнопку заказать
+
+// Выбор в контактах
+$('.select_text').on('click', function() {
+    $(this).parent('.my_select_body').parent('.wrap_my_select').toggleClass('open_select');
+    $('.select_items').on('click', function() {
+      var value_text = $(this).text();
+      $(this).parent('.my_select_body').parent('.wrap_my_select').removeClass('open_select');
+      $(this).siblings('.select_text').text(value_text);
+      $(this).parent('.my_select_body').parent('.wrap_my_select').siblings('.input_text_hidden').val(value_text);
+    })
 });
+// /Выбор в контактах
+
+
+// if($('.mfp-content').find('.white-popup-block').attr('id') == 'coll_info' ){
+//   $(this).addClass('coll_info_mfp-content');
+// }
+
+})(jQuery);
