@@ -12,6 +12,10 @@
 		width: 60%;
 		margin: 0 auto;
 	}
+
+	.deshes-area h1:after{
+	display: none;
+	}
 }
 
 
@@ -29,6 +33,8 @@
 		font-size: 23px;
 	}
 }
+
+
 
 @media (max-width: 450px){
 	#video-bg{
@@ -76,12 +82,6 @@
 		font-size: 25px;
 	}
 
-<<<<<<< HEAD
-}
-=======
-	.deshes-area h1:after{
-		display: none;
-	}
 }
 
 
@@ -89,5 +89,9 @@
 	.wrap_btn_info .div_btn_info{
 		width: 80%;
 	}
+
+	.main-menu ul li ul.sub-menu{
+		left: 0%;
+	}
 }
->>>>>>> dcced9a3aef9fecbe4181a3dae75ae6cbdf3c74a
+
