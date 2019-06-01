@@ -1,0 +1,40 @@
+@media (max-width: 330px){
+	h1{
+		font-size: 23px;
+	}
+}
+
+@media (max-width: 450px){
+	#video-bg{
+		height: 100vh;
+		background-image: url(../images/bgMobile.jpg);
+		background-size: cover; 
+	}
+
+	video{
+		display: none;
+	}
+
+	h1{
+		font-size: 30px;
+    	margin-top: 70px;
+	}
+
+	.content_main_block{
+		width: 100%;
+	}
+
+	.content_main_block a{
+		font-size: 13px;
+	}
+
+	.white-popup-block{
+		width: 90% !important;
+	}
+
+	.header-area{
+		top: 0px;
+	}
+
+
+}
