@@ -238,7 +238,7 @@ h1 span{
 
 /*стили для блока партнеров*/
 .btn_reviews{cursor: pointer;}
-.wrap_reviews{overflow: hidden;height: 125px;transition: all 0.7s ease;}
+.wrap_reviews{overflow: hidden;height: 122px;transition: all 0.7s ease;}
 .wrap_reviews.open_wrap_reviews{height: 250px;transition: all 0.7s ease;}
 
 
