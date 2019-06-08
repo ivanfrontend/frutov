@@ -264,13 +264,13 @@ h1 span{
 			background-color: #fff;
 		}
 
-		::-webkit-scrollbar { width: 5px; height: 0px;}
-		::-webkit-scrollbar-button { height: 0px; background-color: #666; }
-		::-webkit-scrollbar-track {  background-color: #999;}
-		::-webkit-scrollbar-track-piece { background-color: #ffffff;}
-		::-webkit-scrollbar-thumb { height: 0px; background-color: #666; border-radius: 3px;}
-		::-webkit-scrollbar-corner { background-color: #999;}}
-		::-webkit-resizer { background-color: #666;}
+		#aboutas_poupap .wrap_aboutas_poupap_info::-webkit-scrollbar { width: 5px; height: 0px;}
+		#aboutas_poupap .wrap_aboutas_poupap_info::-webkit-scrollbar-button { height: 0px; background-color: #666; }
+		#aboutas_poupap .wrap_aboutas_poupap_info::-webkit-scrollbar-track {  background-color: #999;}
+		#aboutas_poupap .wrap_aboutas_poupap_info::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+		#aboutas_poupap .wrap_aboutas_poupap_info::-webkit-scrollbar-thumb { height: 0px; background-color: #666; border-radius: 3px;}
+		#aboutas_poupap .wrap_aboutas_poupap_info::-webkit-scrollbar-corner { background-color: #999;}}
+		#aboutas_poupap .wrap_aboutas_poupap_info::-webkit-resizer { background-color: #666;}
 
 	#coll_product .wrap_form_coll_product, #coll_product_to .wrap_form_coll_product, #all_coll_phone .wrap_form_coll_product, #block_provider .wrap_form_coll_product{
 		display: inline-block;
@@ -325,3 +325,33 @@ h1 span{
 .btn_reviews{cursor: pointer;}
 .wrap_reviews{overflow: hidden;height: 122px;transition: all 0.7s ease;}
 .wrap_reviews.open_wrap_reviews{height: 250px;transition: all 0.7s ease;}
+
+
+.alignment_content_left{
+	text-align: left;
+}
+
+.style_for_empty_btn{
+	border: 1px solid #ffb606;
+    background: none;
+    color: wheat;
+    margin-left: 20px;
+}
+
+.our_offer{
+	margin-top: 80px;
+}
+
+.reservation-area2{
+	background-image: url(../images/bg_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.reservation-area3{
+	background-image: url(../images/bg_3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
