@@ -351,29 +351,22 @@ var objectProduct = () => {
   var creactObject = {};
   $('.coll_info').on('click', function() {
     // Получаем родителей
-    var parent = $(this).parent('.div_btn_info').parent('.wrap_btn_info');
-    var parentInfo = parent.find('.wrap_block_visibility_hedden');
+    var parent = $(this).parents(':eq(4)').find('.wrap-info-data-attributes');
     // получаем текст
-    var img = parent.parent('.food-content').siblings('.food-img').find('.img_product').data('img');
-    var title = parent.siblings('.wrap_this_name').find('.this_name').text();
-    var country = parentInfo.find('.wrap_country_this_desc').text();
-    var description = parentInfo.find('.wrap_this_desc').text();
-    var season = parentInfo.find('.wrap_this_age').text();
+    var img = parent.children('.data-img').data('img');
+    var customer = parent.children('.data-customer').attr('data-customer');
+    var description = parent.children('.data-description').attr('data-description');
     creactObject = creactObject = {
       'img': img,
-      'title': title,
-      'country': country,
+      'customer': customer,
       'description': description,
-      'season': season,
     }
-    $('#coll_info').find('.wrap_img_product').find('img').attr({'src': creactObject.img});
-    $('#coll_info').find('.wrap_text_product').find('.name_product').text(creactObject.title);
-    $('#coll_info').find('.wrap_disc_product').find('.desc_product').text(creactObject.description);
-    $('#coll_info').find('.wrap_country_product').find('.country_product').text(creactObject.country);
-    $('#coll_info').find('.wrap_age_product').find('.desc_age_product').text(creactObject.season);
+    $('#coll_info').css({'backgroundImage': 'url('+ creactObject.img +')'});
+    $('#coll_info').find('.wrap_text_product').find('.name_product').text(creactObject.customer);
+    $('#coll_info').find('.wrap_disc_product').find('.desc_product').html(creactObject.description);
   });
   $('.coll_product').on('click', function() {
-    $('#coll_product').find('.wrap_form_coll_product').find('.input_product').val(creactObject.title);
+    $('#coll_product').find('.wrap_form_coll_product').find('.input_product').val(creactObject.customer);
   })
 
 }
@@ -382,9 +375,9 @@ objectProduct();
 
 // получение название товара при нажатии на кнопку заказать
 $('.coll_product_to').on('click', function() {
-  var text = $(this).parent('.div_btn_info').parent('.wrap_btn_info').siblings('.wrap_this_name').find('.this_name').text();
-  console.log(text);
-  $('#coll_product_to').find('.wrap_form_coll_product').find('.input_product').val(text);
+  var parent = $(this).parents(':eq(4)').find('.wrap-info-data-attributes');
+  var customer = parent.children('.data-customer').attr('data-customer');
+  $('#coll_product_to').find('.wrap_form_coll_product').find('.input_product').val(customer);
 })
 // /получение название товара при нажатии на кнопку заказать
 
