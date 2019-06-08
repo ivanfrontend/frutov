@@ -336,6 +336,7 @@ var callPopup = (selecter) => {
   });
 };
 // вызов функции
+callPopup('.aboutas_poupap a'); // О нас
 callPopup('.centerMyBtn'); // сотрудничество
 callPopup('.coll_info'); // Подробнее
 callPopup('.coll_product'); // Подробнее -> заказать товар
@@ -410,5 +411,50 @@ $('.btn_reviews').on('click', function() {
 // if($('.mfp-content').find('.white-popup-block').attr('id') == 'coll_info' ){
 //   $(this).addClass('coll_info_mfp-content');
 // }
+
+// Employee Slider
+
+// $('.testimonial-slider').owlCarousel({
+//     loop: false,
+//     margin: 30,
+//     autoplay: false,
+//     autoplayTimeout: 2000,
+//     autoplayHoverPause: true,
+//     nav: false,
+//     dots: true,
+//     smartSpeed: 1000,
+//     responsiveClass: true,
+//     responsive: {
+//         0: {
+//             items: 1
+//         },
+//         576: {
+//             items: 1
+//         },
+//         768: {
+//             items: 1
+//         },
+//         992: {
+//             items: 2
+//         }
+//     }
+// });
+
+$('.wrap_slaiders_main').owlCarousel({
+  loop: true,
+  autoplay: false,
+  autoplayTimeout: 7000,
+  autoplayHoverPause: false,
+  nav: true,
+  dots: false,
+  smartSpeed: 1000,
+  responsiveClass: true,
+      responsive: {
+          0: {
+              items: 1
+          }
+      }
+});
+
 
 })(jQuery);
