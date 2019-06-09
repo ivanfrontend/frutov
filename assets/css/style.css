@@ -383,11 +383,19 @@ h1 span{
 
 @media (max-width: 1250px) and (min-width: 990px){
 	.none{
-		display: none !important;	
+		display: none !important;
 	}
 }
-
+.my-text-center{text-align: center;}
+.menu-contact-info {display: inline-block; text-align: left;}
+.main-menu ul li.mobile-contact-menu{display: none;}
+.menu-contact-info li{font-size: 12px;}
+.menu-contact-info li a{color: #131230; font-weight: 900;}
 
 .main-menu ul{
 	font-size: 12px;
 }
+
+.wrap-leng div.activ{font-weight: 900; cursor: default;}
+.wrap-leng div{cursor: pointer;}
+.wrap-leng div span{vertical-align: bottom;font-size:12px;}
