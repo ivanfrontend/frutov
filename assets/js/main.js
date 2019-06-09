@@ -458,3 +458,15 @@ $('.wrap_slaiders_main').owlCarousel({
 
 
 })(jQuery);
+
+
+var lastli = $('.main-menu').find("li");
+
+
+if(lastli.innerHTML = "Адрес: г.Минск.ул.Отктябрьская 16" ){
+    lastli.last().addClass("none");    
+}
+
+
+
+ 
