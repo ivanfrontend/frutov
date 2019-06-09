@@ -357,6 +357,12 @@ h1 span{
     margin-left: 20px;
 }
 
+@media (max-width: 500px){
+	.style_for_empty_btn{
+		margin-left: 0px;
+	}
+}
+
 .our_offer{
 	margin-top: 80px;
 }
