@@ -377,10 +377,14 @@ h1 span{
 
 @media (max-width: 1250px) and (min-width: 990px){
 	.none{
-		display: none !important;	
+		display: none !important;
 	}
 }
 
+
+.main-menu ul li.mobile-contact-menu{display: none;}
+.menu-contact-info li{font-size: 12px;}
+.menu-contact-info li a{color: #131230; font-weight: 900;}
 
 .main-menu ul{
 	font-size: 12px;

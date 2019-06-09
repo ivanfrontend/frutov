@@ -456,10 +456,6 @@ $('.wrap_slaiders_main').owlCarousel({
 var lastli = $('.main-menu').find("li");
 
 
-if(lastli.innerHTML = "Адрес: г.Минск.ул.Отктябрьская 16" ){
-    lastli.last().addClass("none");    
-}
-
-
-
- 
+// if(lastli.innerHTML = "Адрес: г.Минск.ул.Отктябрьская 16" ){
+//     lastli.last().addClass("none");
+// }
