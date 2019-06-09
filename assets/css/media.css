@@ -29,7 +29,7 @@
   .wrap_info_slaiders_main .desc_slaiders_main{}
   .wrap_info_slaiders_main .desc_slaiders_main a{
     font-size: 12px;
-    padding: 7px 12px !important;  
+    padding: 7px 12px !important;
   }
 }
 
@@ -115,5 +115,9 @@
     padding: 0px;
   }
 	.menu-contact-info{display: none;}
-  .main-menu ul li.mobile-contact-menu{display: inline-block;}
+  .main-menu ul li.mobile-contact-menu{display:block;}
+  .main-menu ul li.mobile-contact-menu.leng-mob-menu{display: inline-block;}
+  .main-menu ul li.mobile-contact-menu.leng-mob-menu span{vertical-align: text-top;}
+  .main-menu ul li.mobile-contact-menu.leng-mob-menu.activ{font-weight: 900;font-size: 14px;}
+  .wrap-leng{display: none;}
 }
