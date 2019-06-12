@@ -283,6 +283,11 @@ h1 span{
 			background-color: #fff;
 		}
 
+		#aboutas_poupap .wrap_form_coll_product .wrap_aboutas_poupap_title{
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+
 		#aboutas_poupap .wrap_aboutas_poupap_info::-webkit-scrollbar { width: 5px; height: 0px;}
 		#aboutas_poupap .wrap_aboutas_poupap_info::-webkit-scrollbar-button { height: 0px; background-color: #666; }
 		#aboutas_poupap .wrap_aboutas_poupap_info::-webkit-scrollbar-track {  background-color: #999;}
