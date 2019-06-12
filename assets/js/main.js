@@ -339,6 +339,7 @@ var callPopup = (selecter) => {
 callPopup('.aboutas_poupap a'); // О нас
 callPopup('.centerMyBtn'); // сотрудничество
 callPopup('.coll_info'); // Подробнее
+callPopup('.coll_info_to'); // Подробнее
 callPopup('.coll_product'); // Подробнее -> заказать товар
 callPopup('.coll_product_to'); // заказать товар
 callPopup('.all_coll_phone'); // все телефоны
@@ -347,11 +348,11 @@ callPopup('.block_provider'); // сотрудничество
 // /функция для всплывающего окна
 
 // функция для создания объекта продукта
-var objectProduct = () => {
+var objectProduct = (myeq, elem) => {
   var creactObject = {};
-  $('.coll_info').on('click', function() {
+  $(elem).on('click', function() {
     // Получаем родителей
-    var parent = $(this).parents(':eq(4)').find('.wrap-info-data-attributes');
+    var parent = $(this).parents(':eq('+myeq+')').find('.wrap-info-data-attributes');
     // получаем текст
     var img = parent.children('.data-img').data('img');
     var customer = parent.children('.data-customer').attr('data-customer');
@@ -370,7 +371,8 @@ var objectProduct = () => {
   })
 
 }
-objectProduct();
+// objectProduct('4','.coll_info' );
+objectProduct('0','.coll_info_to');
 // /функция для создания объекта продукта
 
 // получение название товара при нажатии на кнопку заказать
