@@ -403,8 +403,33 @@ h1 span{
 	font-size: 12px;
 }
 
+.wrap-leng{position: relative;}
 .wrap-leng div.activ{font-weight: 900; cursor: default;}
 .wrap-leng div{cursor: pointer;}
 .wrap-leng div span{vertical-align: bottom;font-size:12px;}
 
 .contact-form .right textarea{height: 270px;}
+
+.hoverbtn{
+	position: absolute;
+}
+
+.wrap-leng:hover .sub-menu{
+	display: block;
+}
+
+.wrap-leng:hover .hoverbtn{
+	display: none;
+}
+.sub-menu{
+	display: none;
+	position: absolute;
+    background: white;
+    min-width: 63px;
+    text-align: center;
+    right: 11px;
+}
+
+.sub-menu li{
+	padding: 5px 4px;
+}
