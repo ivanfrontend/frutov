@@ -362,7 +362,7 @@ var objectProduct = (myeq, elem) => {
       'customer': customer,
       'description': description,
     }
-    $('#coll_info').css({'backgroundImage': 'url('+ creactObject.img +')'});
+    // $('#coll_info').css({'backgroundImage': 'url('+ creactObject.img +')'});
     $('#coll_info').find('.wrap_text_product').find('.name_product').text(creactObject.customer);
     $('#coll_info').find('.wrap_disc_product').find('.desc_product').html(creactObject.description);
   });

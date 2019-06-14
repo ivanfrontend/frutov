@@ -188,22 +188,25 @@ h1 span{
 	/* стили для всплывающего окна для продукта */
 	.mfp-container{padding: 0px;}
 	#coll_info{
-		background-color: #fff;
-		height: 100vh;
+		/* height: 100vh; */
 		font-family: "Playfair Display",serif;
 		color: #333;
+		width: 50%;
+		margin: 0 auto;
+		position: relative;
 	}
 	#coll_info .mfp-close{
-		color: #fff;
+		color: #000;
 	}
 	#coll_info .wrap_info_product{
-	position: absolute;
+	/* position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%); */
 	/* display: flex;
 	flex-wrap: wrap; */
-	width: 50%;
+	background-color: #fff;
+	width: 100%;
 	}
 	/* #coll_info .wrap_info_product .wrap_img_product{
 		width: 40%;
@@ -216,12 +219,14 @@ h1 span{
 		display: flex;
 		flex-wrap: wrap;
     align-items: center;
-		padding: 20px;
-		color: #fff;
+		padding: 20px 20px 0px;
+		color: #000;
 	}
 	#coll_info .wrap_info_product .wrap_text_product div{
 		width: 100%;
 	}
+
+	#coll_info .wrap_btn_coll_product_item{padding-bottom: 20px;}
 
 	#coll_info .wrap_text_product .name_product{
 		font-size: 24px;
