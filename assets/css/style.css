@@ -471,3 +471,13 @@ h1 span{
 .d-flex .info-text p{
 	margin-bottom: 0px;
 }
+
+
+.icon_left{
+	margin-top: 5px;
+}
+
+.icon_left img{
+	width: 30px;
+	margin: 5px;
+}
